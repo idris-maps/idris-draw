@@ -10,7 +10,7 @@ window.onresize = function() {
 }
 
 function setMapHeight() {
-	var mapH = window.innerHeight - document.getElementById('header').offsetHeight
+	var mapH = window.innerHeight - document.getElementById('header').offsetHeight - 10
 	document.getElementById('map').style.height = mapH + 'px'	
 }
 

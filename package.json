@@ -5,7 +5,10 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "watchify main.js -o public/script.js"
+    "watch": "watchify main.js -o public/script.js",
+    "build": "browserify main.js -o public/script.js",
+    "mini": "minify --output public/script.js public/script.js",
+    "prod": "npm run build && npm run mini"
   },
   "author": "",
   "license": "ISC"
